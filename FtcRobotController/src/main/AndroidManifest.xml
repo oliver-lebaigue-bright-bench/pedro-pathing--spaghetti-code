@@ -62,7 +62,7 @@
 
     <!-- Assistant that autostarts the robot controller on android boot (if it's supposed to) -->
     <receiver
-      android:enabled="true"
+      android:enabled="false"
       android:exported="true"
       android:name="org.firstinspires.ftc.ftccommon.internal.RunOnBoot"
       android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
