@@ -35,6 +35,7 @@ import org.firstinspires.ftc.vision.opencv.Circle;
 import org.firstinspires.ftc.vision.opencv.ColorBlobLocatorProcessor;
 import org.firstinspires.ftc.vision.opencv.ColorRange;
 import org.firstinspires.ftc.vision.opencv.ImageRegion;
+import org.firstinspires.ftc.vision.opencv.PredominantColorProcessor;
 
 import java.util.List;
 
@@ -68,7 +69,7 @@ import java.util.List;
  * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
 
-@Disabled
+//@Disabled
 @TeleOp(name = "Concept: Vision Color-Locator (Circle)", group = "Concept")
 public class ConceptVisionColorLocator_Circle extends LinearOpMode {
     @Override
@@ -129,23 +130,73 @@ public class ConceptVisionColorLocator_Circle extends LinearOpMode {
          *        OPENING:    Will Erode and then Dilate which will make small noise blobs go away
          *        CLOSING:    Will Dilate and then Erode which will tend to fill in any small holes in blob edges.
          */
-        ColorBlobLocatorProcessor colorLocator = new ColorBlobLocatorProcessor.Builder()
-                .setTargetColorRange(ColorRange.ARTIFACT_PURPLE)   // Use a predefined color match
+        ColorBlobLocatorProcessor colorLocator_red = new ColorBlobLocatorProcessor.Builder()
+                .setTargetColorRange(ColorRange.RED)   // Use a predefined color match
+
                 .setContourMode(ColorBlobLocatorProcessor.ContourMode.EXTERNAL_ONLY)
                 .setRoi(ImageRegion.asUnityCenterCoordinates(-0.75, 0.75, 0.75, -0.75))
                 .setDrawContours(true)   // Show contours on the Stream Preview
                 .setBoxFitColor(0)       // Disable the drawing of rectangles
                 .setCircleFitColor(Color.rgb(255, 255, 0)) // Draw a circle
-                .setBlurSize(5)          // Smooth the transitions between different colors in image
+                .setBlurSize(15)          // Smooth the transitions between different colors in image
 
                 // the following options have been added to fill in perimeter holes.
                 .setDilateSize(15)       // Expand blobs to fill any divots on the edges
-                .setErodeSize(15)        // Shrink blobs back to original size
+                .setErodeSize(25)        // Shrink blobs back to original size
+                .setMorphOperationType(ColorBlobLocatorProcessor.MorphOperationType.CLOSING)
+
+                .build();
+
+        ColorBlobLocatorProcessor colorLocator_blue = new ColorBlobLocatorProcessor.Builder()
+                .setTargetColorRange(ColorRange.BLUE)   // Use a predefined color match
+
+                .setContourMode(ColorBlobLocatorProcessor.ContourMode.EXTERNAL_ONLY)
+                .setRoi(ImageRegion.asUnityCenterCoordinates(-0.75, 0.75, 0.75, -0.75))
+                .setDrawContours(true)   // Show contours on the Stream Preview
+                .setBoxFitColor(0)       // Disable the drawing of rectangles
+                .setCircleFitColor(Color.rgb(255, 255, 0)) // Draw a circle
+                .setBlurSize(15)          // Smooth the transitions between different colors in image
+
+                // the following options have been added to fill in perimeter holes.
+                .setDilateSize(15)       // Expand blobs to fill any divots on the edges
+                .setErodeSize(25)        // Shrink blobs back to original size
+                .setMorphOperationType(ColorBlobLocatorProcessor.MorphOperationType.CLOSING)
+
+                .build();
+
+        ColorBlobLocatorProcessor colorLocator_yellow = new ColorBlobLocatorProcessor.Builder()
+                .setTargetColorRange(ColorRange.YELLOW)   // Use a predefined color match
+
+                .setContourMode(ColorBlobLocatorProcessor.ContourMode.EXTERNAL_ONLY)
+                .setRoi(ImageRegion.asUnityCenterCoordinates(-0.75, 0.75, 0.75, -0.75))
+                .setDrawContours(true)   // Show contours on the Stream Preview
+                .setBoxFitColor(0)       // Disable the drawing of rectangles
+                .setCircleFitColor(Color.rgb(255, 255, 0)) // Draw a circle
+                .setBlurSize(15)          // Smooth the transitions between different colors in image
+
+                // the following options have been added to fill in perimeter holes.
+                .setDilateSize(15)       // Expand blobs to fill any divots on the edges
+                .setErodeSize(25)        // Shrink blobs back to original size
                 .setMorphOperationType(ColorBlobLocatorProcessor.MorphOperationType.CLOSING)
 
                 .build();
         /*
-         * Build a vision portal to run the Color Locator process.
+         * Build a vision portal to run the Co        ColorBlobLocatorProcessor colorLocator_blue = new ColorBlobLocatorProcessor.Builder()
+                .setTargetColorRange(ColorRange.RED)   // Use a predefined color match
+
+                .setContourMode(ColorBlobLocatorProcessor.ContourMode.EXTERNAL_ONLY)
+                .setRoi(ImageRegion.asUnityCenterCoordinates(-0.75, 0.75, 0.75, -0.75))
+                .setDrawContours(true)   // Show contours on the Stream Preview
+                .setBoxFitColor(0)       // Disable the drawing of rectangles
+                .setCircleFitColor(Color.rgb(255, 255, 0)) // Draw a circle
+                .setBlurSize(15)          // Smooth the transitions between different colors in image
+
+                // the following options have been added to fill in perimeter holes.
+                .setDilateSize(15)       // Expand blobs to fill any divots on the edges
+                .setErodeSize(25)        // Shrink blobs back to original size
+                .setMorphOperationType(ColorBlobLocatorProcessor.MorphOperationType.CLOSING)
+
+                .build();lor Locator process.
          *
          *  - Add the colorLocator process created above.
          *  - Set the desired video resolution.
@@ -158,7 +209,9 @@ public class ConceptVisionColorLocator_Circle extends LinearOpMode {
          *      .setCamera(BuiltinCameraDirection.BACK)    ... for a Phone Camera
          */
         VisionPortal portal = new VisionPortal.Builder()
-                .addProcessor(colorLocator)
+                .addProcessor(colorLocator_red)
+                .addProcessor(colorLocator_blue)
+                .addProcessor(colorLocator_yellow)
                 .setCameraResolution(new Size(320, 240))
                 .setCamera(hardwareMap.get(WebcamName.class, "Webcam 1"))
                 .build();
@@ -171,7 +224,9 @@ public class ConceptVisionColorLocator_Circle extends LinearOpMode {
             telemetry.addData("preview on/off", "... Camera Stream\n");
 
             // Read the current list
-            List<ColorBlobLocatorProcessor.Blob> blobs = colorLocator.getBlobs();
+            List<ColorBlobLocatorProcessor.Blob> red_blobs = colorLocator_red.getBlobs();
+            List<ColorBlobLocatorProcessor.Blob> blue_blobs = colorLocator_blue.getBlobs();
+            List<ColorBlobLocatorProcessor.Blob> yellow_blobs = colorLocator_blue.getBlobs();
 
             /*
              * The list of Blobs can be filtered to remove unwanted Blobs.
@@ -206,19 +261,30 @@ public class ConceptVisionColorLocator_Circle extends LinearOpMode {
              *   A blob's circularity is how circular it is based on the known area and arc length.
              *   A perfect circle has a circularity of 1.  All others are < 1
              */
+
+            // red
             ColorBlobLocatorProcessor.Util.filterByCriteria(
                     ColorBlobLocatorProcessor.BlobCriteria.BY_CONTOUR_AREA,
-                    50, 20000, blobs);  // filter out very small blobs.
-
+                    50, 20000, red_blobs); // filter out small blobs
             ColorBlobLocatorProcessor.Util.filterByCriteria(
                     ColorBlobLocatorProcessor.BlobCriteria.BY_CIRCULARITY,
-                    0.6, 1, blobs);     /* filter out non-circular blobs.
-                    * NOTE: You may want to adjust the minimum value depending on your use case.
-                    * Circularity values will be affected by shadows, and will therefore vary based
-                    * on the location of the camera on your robot and venue lighting. It is strongly
-                    * encouraged to test your vision on the competition field if your event allows
-                    * sensor calibration time.
-                    */
+                    0.6, 1, red_blobs);
+
+            // blue
+            ColorBlobLocatorProcessor.Util.filterByCriteria(
+                    ColorBlobLocatorProcessor.BlobCriteria.BY_CONTOUR_AREA,
+                    50, 20000, blue_blobs);
+            ColorBlobLocatorProcessor.Util.filterByCriteria(
+                    ColorBlobLocatorProcessor.BlobCriteria.BY_CIRCULARITY,
+                    0.6, 1, blue_blobs);
+
+            // yellow
+            ColorBlobLocatorProcessor.Util.filterByCriteria(
+                    ColorBlobLocatorProcessor.BlobCriteria.BY_CONTOUR_AREA,
+                    50, 20000, yellow_blobs);
+            ColorBlobLocatorProcessor.Util.filterByCriteria(
+                    ColorBlobLocatorProcessor.BlobCriteria.BY_CIRCULARITY,
+                    0.6, 1, yellow_blobs);
 
             /*
              * The list of Blobs can be sorted using the same Blob attributes as listed above.
@@ -231,11 +297,24 @@ public class ConceptVisionColorLocator_Circle extends LinearOpMode {
             telemetry.addLine("Circularity Radius Center");
 
             // Display the Blob's circularity, and the size (radius) and center location of its circleFit.
-            for (ColorBlobLocatorProcessor.Blob b : blobs) {
-
+            // red
+            for (ColorBlobLocatorProcessor.Blob b : red_blobs) {
                 Circle circleFit = b.getCircle();
                 telemetry.addLine(String.format("%5.3f      %3d     (%3d,%3d)",
                            b.getCircularity(), (int) circleFit.getRadius(), (int) circleFit.getX(), (int) circleFit.getY()));
+            }
+            // blue
+            for (ColorBlobLocatorProcessor.Blob b : blue_blobs) {
+                Circle circleFit = b.getCircle();
+                telemetry.addLine(String.format("%5.3f      %3d     (%3d,%3d)",
+                        b.getCircularity(), (int) circleFit.getRadius(), (int) circleFit.getX(), (int) circleFit.getY()));
+            }
+            // yellow
+            for (ColorBlobLocatorProcessor.Blob b : yellow_blobs) {
+
+                Circle circleFit = b.getCircle();
+                telemetry.addLine(String.format("%5.3f      %3d     (%3d,%3d)",
+                        b.getCircularity(), (int) circleFit.getRadius(), (int) circleFit.getX(), (int) circleFit.getY()));
             }
 
             telemetry.update();
