@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.qualcomm.ftcrobotcontroller.test.FtcRobotController-mergeDebugAndroidTestResources-39:/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "/home/lebaigue/.gradle/caches/9.1.0/transforms/a2423c45bf9d3432ddc7dc11b76cd84f/transformed/appcompat-1.6.1/res/values-watch-v21/values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}

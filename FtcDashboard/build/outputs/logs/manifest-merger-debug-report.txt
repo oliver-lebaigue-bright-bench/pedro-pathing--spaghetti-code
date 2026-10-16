@@ -1,0 +1,17 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/lebaigue/StudioProjects/pedro-pathing--spaghetti-code/FtcDashboard/src/main/AndroidManifest.xml:1:1-2:44
+INJECTED from /home/lebaigue/StudioProjects/pedro-pathing--spaghetti-code/FtcDashboard/src/main/AndroidManifest.xml:1:1-2:44
+	package
+		ADDED from /home/lebaigue/StudioProjects/pedro-pathing--spaghetti-code/FtcDashboard/src/main/AndroidManifest.xml:2:5-41
+		INJECTED from /home/lebaigue/StudioProjects/pedro-pathing--spaghetti-code/FtcDashboard/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/lebaigue/StudioProjects/pedro-pathing--spaghetti-code/FtcDashboard/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /home/lebaigue/StudioProjects/pedro-pathing--spaghetti-code/FtcDashboard/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/lebaigue/StudioProjects/pedro-pathing--spaghetti-code/FtcDashboard/src/main/AndroidManifest.xml
+INJECTED from /home/lebaigue/StudioProjects/pedro-pathing--spaghetti-code/FtcDashboard/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/lebaigue/StudioProjects/pedro-pathing--spaghetti-code/FtcDashboard/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/lebaigue/StudioProjects/pedro-pathing--spaghetti-code/FtcDashboard/src/main/AndroidManifest.xml
