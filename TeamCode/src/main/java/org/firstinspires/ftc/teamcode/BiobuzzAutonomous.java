@@ -19,13 +19,13 @@ public class BiobuzzAutonomous extends LinearOpMode {
 
         // Define your Tank Drive trajectory using Road Runner 1.0 actionBuilder
         Action biobuzzTrajectory = drive.actionBuilder(beginPose)
-                .lineToX(36.0)
-                .turn(Math.toRadians(90))
-                .lineToY(36.0)
-                .turn(Math.toRadians(-90))
+                .lineToX(18.0)
+                //.turn(Math.toRadians(90))
+                //.lineToY(36.0)
+                //.turn(Math.toRadians(-90))
                 .build();
 
-        telemetry.addData("Status", "Ready for Biobuzz Autonomous");
+        telemetry.addData("Status", "Ready for Biobuzz Autonomous!");
         telemetry.update();
 
         // Wait for Driver Station Start button

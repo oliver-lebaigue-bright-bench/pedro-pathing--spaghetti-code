@@ -18,7 +18,7 @@ import org.firstinspires.ftc.vision.opencv.PredominantColorProcessor;
 
 import java.util.List;
 
-//@Disabled
+@Disabled
 @TeleOp(name = "Concept: Vision Color-Locator (Circle)", group = "Concept")
 public class ConceptVisionColorLocator_Circle extends LinearOpMode {
     @Override

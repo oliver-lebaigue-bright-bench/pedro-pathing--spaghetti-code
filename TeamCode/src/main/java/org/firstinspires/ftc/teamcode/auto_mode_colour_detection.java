@@ -3,24 +3,19 @@ package org.firstinspires.ftc.teamcode;
 import android.graphics.Color;
 import android.util.Size;
 
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.robotcore.external.hardware.camera.WebcamName;
 import org.firstinspires.ftc.vision.VisionPortal;
 import org.firstinspires.ftc.vision.opencv.Circle;
 import org.firstinspires.ftc.vision.opencv.ColorBlobLocatorProcessor;
 import org.firstinspires.ftc.vision.opencv.ColorRange;
 import org.firstinspires.ftc.vision.opencv.ImageRegion;
-import org.firstinspires.ftc.vision.opencv.PredominantColorProcessor;
 
-import java.util.List;
-
-@TeleOp(name = "auto_mode", group = "Concept")
-public class auto_mode extends LinearOpMode {
+@TeleOp(name = "auto_mode_colour_detection", group = "Autonomous")
+public class auto_mode_colour_detection extends LinearOpMode {
 
     // variables
     DcMotor launcher;
@@ -74,14 +69,14 @@ public class auto_mode extends LinearOpMode {
                 .build();
 
         waitForStart();
-        while (opModeIsActive()) {
+        /*while (opModeIsActive()) {
             // pollen
             for (ColorBlobLocatorProcessor.Blob b : pollen_blobs) {
                 Circle circleFit = b.getCircle();
                 telemetry.addLine(String.format("%5.3f      %3d     (%3d,%3d)",
                         b.getCircularity(), (int) circleFit.getRadius(), (int) circleFit.getX(), (int) circleFit.getY()));
             }
-        }
+        }*/
 
         /*telemetry.setMsTransmissionInterval(100);
         telemetry.setDisplayFormat(Telemetry.DisplayFormat.MONOSPACE);
