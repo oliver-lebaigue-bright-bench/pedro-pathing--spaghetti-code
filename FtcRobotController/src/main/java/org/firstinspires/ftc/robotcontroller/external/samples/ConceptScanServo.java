@@ -59,7 +59,7 @@ public class ConceptScanServo extends LinearOpMode {
 
     // Define class members
     Servo   servo;
-    double  position = (MAX_POS - MIN_POS) / 2; // Start at halfway position
+    double  position = 0;
     boolean rampUp = true;
 
 
@@ -74,10 +74,11 @@ public class ConceptScanServo extends LinearOpMode {
         telemetry.addData(">", "Press Start to scan Servo." );
         telemetry.update();
         waitForStart();
+        servo.setPosition(position);
 
 
         // Scan servo till stop pressed.
-        while(opModeIsActive()){
+        /*while(opModeIsActive()){
 
             // slew the servo, according to the rampUp (direction) variable.
             if (rampUp) {
@@ -106,7 +107,7 @@ public class ConceptScanServo extends LinearOpMode {
             servo.setPosition(position);
             sleep(CYCLE_MS);
             idle();
-        }
+        }*/
 
         // Signal done;
         telemetry.addData(">", "Done");

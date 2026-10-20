@@ -71,18 +71,21 @@ public final class TankDrive {
                 RevHubOrientationOnRobot.UsbFacingDirection.FORWARD;
 
         // drive model parameters
-        public double inPerTick = 0;
-        public double trackWidthTicks = 0;
+        // Calculated for 9 cm wheel diameter, REV HD Hex motor (28 counts/rev), 20:1 internal gearbox + 5:1 external ratio = 2800 counts/rev
+        // Circumference = 9 cm / 2.54 * PI = 11.1314 inches. inPerTick = 11.1314 / 2800 = 0.0039755
+        // (If your internal gearbox is 40:1 instead of 20:1, use 5600 counts/rev -> inPerTick = 0.001988)
+        public double inPerTick = 0.0039755;
+        public double trackWidthTicks = 3521; // Estimated for 14-inch track width (14.0 / 0.0039755)
 
         // feedforward parameters (in tick units)
-        public double kS = 0;
-        public double kV = 0;
+        public double kS = 0.1;
+        public double kV = 0.001;
         public double kA = 0;
 
         // path profile parameters (in inches)
-        public double maxWheelVel = 50;
-        public double minProfileAccel = -30;
-        public double maxProfileAccel = 50;
+        public double maxWheelVel = 15;
+        public double minProfileAccel = -10;
+        public double maxProfileAccel = 10;
 
         // turn profile parameters (in radians)
         public double maxAngVel = Math.PI; // shared with path
@@ -152,8 +155,9 @@ public final class TankDrive {
                 this.rightEncs = Collections.unmodifiableList(rightEncs);
             }
 
-            // TODO: reverse encoder directions if needed
-            //   leftEncs.get(0).setDirection(DcMotorSimple.Direction.REVERSE);
+            for (Encoder e : leftEncs) {
+                e.setDirection(DcMotorSimple.Direction.REVERSE);
+            }
 
             this.pose = pose;
         }
@@ -240,14 +244,12 @@ public final class TankDrive {
         rightMotors = Arrays.asList(hardwareMap.get(DcMotorEx.class, "right"));
 
         for (DcMotorEx m : leftMotors) {
+            m.setDirection(DcMotorSimple.Direction.REVERSE);
             m.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         }
         for (DcMotorEx m : rightMotors) {
             m.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         }
-
-        // TODO: reverse motor directions if needed
-        //   leftMotors.get(0).setDirection(DcMotorSimple.Direction.REVERSE);
 
         // TODO: make sure your config has an IMU with this name (can be BNO or BHI)
         //   see https://ftc-docs.firstinspires.org/en/latest/hardware_and_software_configuration/configuring/index.html
