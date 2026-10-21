@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 //@Disabled
 public class intake_down extends LinearOpMode {
 
-    double INTAKE_DOWN_POS = 0.7;
+    double INTAKE_DOWN_POS = 0.55;
 
     // Define class members
     Servo   servo_left;

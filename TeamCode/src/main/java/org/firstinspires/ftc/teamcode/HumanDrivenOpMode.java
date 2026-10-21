@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.Range;
 
 @TeleOp(name = "Main Drive", group = "TeleOp")
@@ -10,8 +11,10 @@ public class HumanDrivenOpMode extends LinearOpMode {
 
     // Define motors and toggle states
     DcMotor left, right, intake, launcher;
-    boolean intakeOn = false, launcherOn = false;
-    boolean lastCross = false, lastCircle = false;
+    Servo intake_servo;
+
+    boolean intakeOn = false, launcherOn = false, intake_servoBoolean;
+    boolean lastCross = false, lastCircle = false, lastSquare = false;
     boolean robotWasMoving =  false;
 
     @Override
@@ -21,6 +24,7 @@ public class HumanDrivenOpMode extends LinearOpMode {
         right = hardwareMap.get(DcMotor.class, "right");
         intake = hardwareMap.get(DcMotor.class, "intake");
         launcher = hardwareMap.get(DcMotor.class, "launcher");
+        intake_servo = hardwareMap.get(Servo.class, "left_hand");
 
         // Reverse right motor so both sides drive forward together
         right.setDirection(DcMotor.Direction.REVERSE);
@@ -30,6 +34,7 @@ public class HumanDrivenOpMode extends LinearOpMode {
         right.setPower(0);
         intake.setPower(0);
         launcher.setPower(0);
+        intake_servo.setPosition(0.1);
 
         // Wait for the driver station start button to be pressed
         waitForStart();
@@ -61,9 +66,16 @@ public class HumanDrivenOpMode extends LinearOpMode {
             }
             lastCircle = gamepad1.circle;
 
+            if (gamepad1.square && !lastSquare) {
+                intake_servoBoolean = !intake_servoBoolean;
+            }
+            intake_servoBoolean = gamepad1.square;
+
+
             // Apply power to intake and launcher based on toggle states
-            intake.setPower(intakeOn ? 1.0 : 0.0);
+            intake.setPower(intakeOn ? -0.55 : 0);
             launcher.setPower(launcherOn ? 1.0 : 0.0);
+            intake_servo.setPosition(intake_servoBoolean ? 0.1 : 0.55);
 
             telemetry.addData("status", "running...");
             telemetry.update();
