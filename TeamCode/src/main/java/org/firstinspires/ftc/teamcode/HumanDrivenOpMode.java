@@ -66,10 +66,11 @@ public class HumanDrivenOpMode extends LinearOpMode {
             }
             lastCircle = gamepad1.circle;
 
+            // Launcher toggle using square button (edge detection)
             if (gamepad1.square && !lastSquare) {
                 intake_servoBoolean = !intake_servoBoolean;
             }
-            intake_servoBoolean = gamepad1.square;
+            lastSquare = gamepad1.square;
 
 
             // Apply power to intake and launcher based on toggle states
