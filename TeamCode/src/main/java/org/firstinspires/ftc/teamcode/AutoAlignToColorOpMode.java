@@ -47,12 +47,12 @@ public class AutoAlignToColorOpMode extends LinearOpMode {
 
         // Target selection during Init
         while (opModeInInit()) {
-            if (gamepad1.x || gamepad1.cross) targetType = TargetType.POLLEN_YELLOW;
-            else if (gamepad1.b || gamepad1.circle) targetType = TargetType.NECTAR_RED;
-            else if (gamepad1.a || gamepad1.square) targetType = TargetType.NECTAR_BLUE;
-            else if (gamepad1.y || gamepad1.triangle) targetType = TargetType.ANY_LARGEST;
+            if (gamepad1.cross) targetType = TargetType.POLLEN_YELLOW;
+            else if (gamepad1.circle) targetType = TargetType.NECTAR_RED;
+            else if (gamepad1.square) targetType = TargetType.NECTAR_BLUE;
+            else if (gamepad1.triangle) targetType = TargetType.ANY_LARGEST;
 
-            telemetry.addData("Target (Cross=Yellow, Circle=Red, Square=Blue, Triangle=Any)", targetType);
+            telemetry.addData("Target (Cross=Pollen, Circle=Red, Square=Blue, Triangle=Any)", targetType);
             telemetry.update();
             sleep(50);
         }
