@@ -1,7 +1,9 @@
+# FTC Team 39068 "Spaghetti code" - Sample Conventions
+
 ## Sample Class/Opmode conventions
 #### V 1.1.0  8/9/2017
 
-This document defines the FTC Sample OpMode and Class conventions.
+This document defines the FTC Sample OpMode and Class conventions used by FTC Team 39068 "Spaghetti code".
 
 ### OpMode Name
 

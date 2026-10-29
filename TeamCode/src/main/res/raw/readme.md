@@ -1,1 +1,1 @@
-Place your sound files in this folder to use them as project resources.
+Place sound files here for FTC Team 39068 "Spaghetti code" to use them as project resources.
