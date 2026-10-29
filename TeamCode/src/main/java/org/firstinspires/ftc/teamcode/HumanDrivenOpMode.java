@@ -13,9 +13,10 @@ public class HumanDrivenOpMode extends LinearOpMode {
     DcMotor left, right, intake, launcher;
     Servo intake_servo;
 
-    boolean intakeOn = false, launcherOn = false, intake_servoBoolean;
-    boolean lastCross = false, lastCircle = false, lastSquare = false;
-    boolean robotWasMoving =  false;
+    boolean intakeOn = false, intake_servoBoolean;
+    boolean lastCross = false, lastSquare = false, lastDpadUp = false, lastDpadDown = false;
+    boolean robotWasMoving = false;
+    double launcherValue = 0.0;
 
     @Override
     public void runOpMode() {
@@ -60,25 +61,42 @@ public class HumanDrivenOpMode extends LinearOpMode {
             }
             lastCross = gamepad1.cross;
 
-            // Launcher toggle using circle button (edge detection)
-            if (gamepad1.circle && !lastCircle) {
-                launcherOn = !launcherOn;
-            }
-            lastCircle = gamepad1.circle;
-
-            // Launcher toggle using square button (edge detection)
+            // Intake servo toggle using square button (edge detection)
             if (gamepad1.square && !lastSquare) {
                 intake_servoBoolean = !intake_servoBoolean;
             }
             lastSquare = gamepad1.square;
 
+            // Launcher speed control using dpad_up (increase) and dpad_down (decrease)
+            if (gamepad1.dpad_up && !lastDpadUp) {
+                if (launcherValue == 0.0) {
+                    launcherValue = 0.5;
+                } else if (launcherValue == 0.5) {
+                    launcherValue = 1.0;
+                }
+            }
 
-            // Apply power to intake and launcher based on toggle states
+            if (gamepad1.dpad_down && !lastDpadDown) {
+                if (launcherValue == 1.0) {
+                    launcherValue = 0.5;
+                } else if (launcherValue == 0.5) {
+                    launcherValue = 0.0;
+                }
+            }
+
+            lastDpadUp = gamepad1.dpad_up;
+            lastDpadDown = gamepad1.dpad_down;
+
+            // Apply power to intake and launcher
             intake.setPower(intakeOn ? -0.55 : 0);
-            launcher.setPower(launcherOn ? 1.0 : 0.0);
-            intake_servo.setPosition(intake_servoBoolean ? 0.1 : 0.55);
+            launcher.setPower(launcherValue);
 
-            telemetry.addData("status", "running...");
+            // increase second value to go further down
+            intake_servo.setPosition(intake_servoBoolean ? 0.1 : 0.65);
+
+            telemetry.addData("Status", "Running...");
+            telemetry.addData("Launcher Speed", launcherValue);
+            telemetry.addData("Intake On", intakeOn);
             telemetry.update();
         }
         
