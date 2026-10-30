@@ -200,8 +200,8 @@ As a **rookie team with limited funds**, we are immensely grateful to our foundi
 ### Student Roster
 | Student | Role(s) |
 | :--- | :--- |
-| **Oliver** | Team Manager • Build Team • Software Engineer |
-| **Eli** | Team Manager • Software Engineer |
+| **[Oliver](https://github.com/oliver-lebaigue-bright-bench)** | Team Manager • Build Team • Software Engineer |
+| **[Eli](https://github.com/BrokenV0id)** | Team Manager • Software Engineer |
 | **Charlie** | Lead Driver |
 | **Oakley** | Build Team • Electrics |
 | **Tien Le** | Strategy Lead |
