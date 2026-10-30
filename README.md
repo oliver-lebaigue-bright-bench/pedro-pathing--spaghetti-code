@@ -16,7 +16,7 @@
 <!-- Action & Status Badges -->
 <a href="https://github.com/oliver-lebaigue-bright-bench/pedro-pathing--spaghetti-code"><img src="https://img.shields.io/badge/FTC%20Season-2026--2027%20BIOBUZZ-FFD700?style=for-the-badge&logo=first&logoColor=black" alt="FTC Season" height="38" /></a>
 <a href="mailto:oliverlebaigue@gmail.com"><img src="https://img.shields.io/badge/Contact-Email_Us-blue?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact Email" height="38" /></a>
-<a href="#-sponsors--support-us"><img src="https://img.shields.io/badge/Status-Rookie_Team-orange?style=for-the-badge" alt="Status" height="38" /></a>
+<a href="#sponsors-and-support-us"><img src="https://img.shields.io/badge/Status-Rookie_Team-orange?style=for-the-badge" alt="Status" height="38" /></a>
 
 <br/><br/>
 
@@ -25,15 +25,15 @@
 [![FTC SDK](https://img.shields.io/badge/FTC_SDK-v9.0+-blue?style=flat-square&logo=android&logoColor=white&labelColor=1a1a1a)](https://github.com/FIRST-Tech-Challenge/FTCRobotController)
 [![OpenCV](https://img.shields.io/badge/OpenCV-VisionPortal-green?style=flat-square&logo=opencv&logoColor=white&labelColor=1a1a1a)](https://opencv.org/)
 [![Road Runner](https://img.shields.io/badge/Road_Runner-1.0-purple?style=flat-square&labelColor=1a1a1a)](https://rr.brott.dev/)
-[![FTC Dashboard](https://img.shields.io/badge/FTC_Dashboard-Live_Telemetry-red?style=flat-square&labelColor=1a1a1a)](acmerobotics.github.io/ftc-dashboard/)
-[![Location](https://img.shields.io/badge/Location-Pembrokeshire_College_%C2%B7_Wales_UK-00E676?style=flat-square&labelColor=1a1a1a)](#-about-team-39068)
+[![FTC Dashboard](https://img.shields.io/badge/FTC_Dashboard-Live_Telemetry-red?style=flat-square&labelColor=1a1a1a)](https://acmerobotics.github.io/ftc-dashboard/)
+[![Location](https://img.shields.io/badge/Location-Pembrokeshire_College_%C2%B7_Wales_UK-00E676?style=flat-square&labelColor=1a1a1a)](#about-team-39068)
 
 </div>
 
 ---
 
 <!-- SECTION HEADER: ABOUT -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=🍝%20ABOUT%20TEAM%2039068&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="About Section" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=ABOUT%20TEAM%2039068&fontSize=18&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="About Section" />
 
 <br/>
 
@@ -48,7 +48,7 @@ Founded in 2026, **Team 39068 "Spaghetti code"** is a student-led robotics team 
 ---
 
 <!-- SECTION HEADER: HARDWARE -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=🤖%20ROBOT%20HARDWARE%20%26%20SUBSYSTEMS&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Hardware Section" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=ROBOT%20HARDWARE%20AND%20SUBSYSTEMS&fontSize=18&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Hardware Section" />
 
 <br/>
 
@@ -67,7 +67,7 @@ Founded in 2026, **Team 39068 "Spaghetti code"** is a student-led robotics team 
 ---
 
 <!-- SECTION HEADER: SOFTWARE -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=💻%20SOFTWARE%20%26%20AUTONOMOUS&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Software Section" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=SOFTWARE%20AND%20AUTONOMOUS&fontSize=18&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Software Section" />
 
 <br/>
 
@@ -84,7 +84,7 @@ Our codebase is built on Java using the official FTC SDK and integrates modern r
 ---
 
 <!-- SECTION HEADER: TELEOP CONTROLS -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=🎮%20TELEOP%20DRIVER%20CONTROLS&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="TeleOp Section" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=TELEOP%20DRIVER%20CONTROLS&fontSize=18&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="TeleOp Section" />
 
 <br/>
 
@@ -106,7 +106,7 @@ TeleOp is mapped for single-driver operation on **Gamepad 1** (`HumanDrivenOpMod
 <!-- 🔥 FUTURE ROADMAP SECTION 🔥 -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=70&text=🔮%20ROBOT%20%26%20SOFTWARE%20ROADMAP&fontSize=28&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Future Roadmap Header" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=70&text=ROBOT%20AND%20SOFTWARE%20ROADMAP&fontSize=24&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Future Roadmap Header" />
 
 <p align="center"><b>Our development pipeline and upcoming hardware/software upgrades:</b></p>
 
@@ -157,23 +157,8 @@ TeleOp is mapped for single-driver operation on **Gamepad 1** (`HumanDrivenOpMod
 
 ---
 
-<!-- SECTION HEADER: ANALYTICS -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=📊%20REPOSITORY%20INSIGHTS&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Analytics Section" />
-
-<br/>
-
-<div align="center">
-
-<a href="https://github.com/oliver-lebaigue-bright-bench/pedro-pathing--spaghetti-code">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=oliver-lebaigue-bright-bench&repo=pedro-pathing--spaghetti-code&layout=compact&bg_color=1a1a1a&title_color=FFD700&text_color=ffffff&border_color=333333&hide=html,css" alt="Top Languages" />
-</a>
-
-</div>
-
----
-
 <!-- SECTION HEADER: GETTING STARTED -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=⚡%20GETTING%20STARTED%20%26%20DEPLOYMENT&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Getting Started Section" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=GETTING%20STARTED%20AND%20DEPLOYMENT&fontSize=18&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Getting Started Section" />
 
 <br/>
 
@@ -190,7 +175,7 @@ TeleOp is mapped for single-driver operation on **Gamepad 1** (`HumanDrivenOpMod
 ---
 
 <!-- SECTION HEADER: SPONSORS -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=🤝%20SPONSORS%20%26%20SUPPORT%20US&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Sponsors Section" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=SPONSORS%20AND%20SUPPORT%20US&fontSize=18&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Sponsors Section" />
 
 <br/>
 
@@ -204,7 +189,7 @@ As a **rookie team with limited funds**, we are immensely grateful to our foundi
 ---
 
 <!-- SECTION HEADER: ROSTER -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=👥%20TEAM%20ROSTER%20%26%20CREDITS&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Roster Section" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=TEAM%20ROSTER%20AND%20CREDITS&fontSize=18&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Roster Section" />
 
 <br/>
 
