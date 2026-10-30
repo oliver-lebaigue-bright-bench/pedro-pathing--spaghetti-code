@@ -1,52 +1,60 @@
 <div align="center">
-  <img src="logo.png" alt="FTC Team 39068 Spaghetti Code Logo" width="220" />
 
-  # FTC Team 39068 "Spaghetti code" 🍝
+<!-- Header Banner & Typing Intro -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=FFD700&height=180&section=header&text=SPAGHETTI%20CODE&fontSize=55&fontColor=1a1a1a&animation=fadeIn&fontAlignY=38" width="100%" alt="Team 39068 Header Banner" />
 
-  ![FTC Season](https://img.shields.io/badge/FTC%20Season-2026--2027%20BIOBUZZ-brightgreen?style=for-the-badge)
-  ![Location](https://img.shields.io/badge/Location-Wales%2C%20UK-blue?style=for-the-badge)
-  ![School](https://img.shields.io/badge/College-Pembrokeshire%20College-red?style=for-the-badge)
-  ![Status](https://img.shields.io/badge/Status-Rookie%20Team-orange?style=for-the-badge)
+<br/>
 
-  ![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java&logoColor=white)
-  ![FTC SDK](https://img.shields.io/badge/FTC_SDK-v9.0+-blue?style=for-the-badge)
-  ![OpenCV](https://img.shields.io/badge/OpenCV-VisionPortal-green?style=for-the-badge&logo=opencv&logoColor=white)
-  ![Road Runner](https://img.shields.io/badge/Road_Runner-1.0-purple?style=for-the-badge)
-  ![FTC Dashboard](https://img.shields.io/badge/FTC_Dashboard-Telemetry-red?style=for-the-badge)
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=25&pause=1000&color=FFD700&center=true&vCenter=true&width=650&lines=FTC+Team+39068+%22Spaghetti+code%22;Pembrokeshire+College+%C2%B7+Wales%2C+UK;Road+Runner+1.0+%2B+OpenCV+Vision;2026-2027+BIOBUZZ+Rookie+Season" alt="Typing SVG" />
 
-  <p>Official robot control software repository for <b>FTC Team 39068 "Spaghetti code"</b>, based at <b>Pembrokeshire College</b> in Wales, UK. Competing in the <b>2026–2027 FIRST Tech Challenge BIOBUZZ Season</b>.</p>
+<br/><br/>
+
+<img src="logo.png" width="140" alt="Spaghetti Code Logo">
+
+<br/><br/>
+
+<!-- Action & Status Badges -->
+<a href="https://github.com/oliver-lebaigue-bright-bench/pedro-pathing--spaghetti-code"><img src="https://img.shields.io/badge/FTC%20Season-2026--2027%20BIOBUZZ-FFD700?style=for-the-badge&logo=first&logoColor=black" alt="FTC Season" height="38" /></a>
+<a href="mailto:oliverlebaigue@gmail.com"><img src="https://img.shields.io/badge/Contact-Email_Us-blue?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact Email" height="38" /></a>
+<a href="#-sponsors--support-us"><img src="https://img.shields.io/badge/Status-Rookie_Team-orange?style=for-the-badge" alt="Status" height="38" /></a>
+
+<br/><br/>
+
+<!-- Tech Stack Badges -->
+[![Java](https://img.shields.io/badge/Java-17-FFD700?style=flat-square&logo=java&logoColor=black&labelColor=1a1a1a)](https://www.oracle.com/java/)
+[![FTC SDK](https://img.shields.io/badge/FTC_SDK-v9.0+-blue?style=flat-square&logo=android&logoColor=white&labelColor=1a1a1a)](https://github.com/FIRST-Tech-Challenge/FTCRobotController)
+[![OpenCV](https://img.shields.io/badge/OpenCV-VisionPortal-green?style=flat-square&logo=opencv&logoColor=white&labelColor=1a1a1a)](https://opencv.org/)
+[![Road Runner](https://img.shields.io/badge/Road_Runner-1.0-purple?style=flat-square&labelColor=1a1a1a)](https://rr.brott.dev/)
+[![FTC Dashboard](https://img.shields.io/badge/FTC_Dashboard-Live_Telemetry-red?style=flat-square&labelColor=1a1a1a)](acmerobotics.github.io/ftc-dashboard/)
+[![Location](https://img.shields.io/badge/Location-Pembrokeshire_College_%C2%B7_Wales_UK-00E676?style=flat-square&labelColor=1a1a1a)](#-about-team-39068)
+
 </div>
 
 ---
 
-## 📋 Table of Contents
-- [About Team 39068](#-about-team-39068)
-- [Robot Hardware & Subsystems](#-robot-hardware--subsystems)
-- [Software Architecture & Features](#-software-architecture--features)
-- [TeleOp Driver Controls](#-teleop-driver-controls)
-- [Autonomous & Vision System](#-autonomous--vision-system)
-- [Project Structure](#-project-structure)
-- [Getting Started & Deployment](#-getting-started--deployment)
-- [Sponsors & Support Us](#-sponsors--support-us)
-- [Team Roster & Credits](#-team-roster--credits)
-- [Contact & Inquiries](#-contact--inquiries)
+<!-- SECTION HEADER: ABOUT -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=🍝%20ABOUT%20TEAM%2039068&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="About Section" />
+
+<br/>
+
+### 🍝 Who We Are
+
+Founded in 2026, **Team 39068 "Spaghetti code"** is a student-led robotics team based at **Pembrokeshire College** in Wales, UK. As a team composed heavily of passionate student programmers, engineers, and makers, our name pays homage to software development culture with a touch of humor!
+
+2026–2027 marks our **Rookie Year** competing in the FIRST Tech Challenge.
+
+> **💡 Rookie Journey:** As a rookie team built from the ground up by students, we are actively developing our custom software stack—integrating motion profiling, computer vision, closed-loop motor control, and live telemetry streaming.
 
 ---
 
-## 🍝 About Team 39068
+<!-- SECTION HEADER: HARDWARE -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=🤖%20ROBOT%20HARDWARE%20%26%20SUBSYSTEMS&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Hardware Section" />
 
-Founded in 2026, **Team 39068 "Spaghetti code"** is a student-led robotics team from **Pembrokeshire College** in Wales, UK. As a team composed heavily of passionate programmers and makers, our name pays homage to software development culture with a touch of humor. 
+<br/>
 
-2026–2027 marks our **Rookie Year** in the FIRST Tech Challenge!
+### 🤖 Robot Hardware Architecture
 
-> [!NOTE]
-> As a rookie team built from the ground up by students, we are actively learning and expanding our custom software stack, integrating motion profiling, computer vision, and closed-loop motor control.
-
----
-
-## 🤖 Robot Hardware & Subsystems
-
-| Subsystem | Hardware Specs & Configuration |
+| Subsystem | Hardware Specs & Implementation |
 | :--- | :--- |
 | **Drivetrain** | Differential **Tank Drive** layout. *(Future goal: Upgrading to a Mecanum Drive once kit funding is secured!)* |
 | **Intake** | Active Roller Intake with a servo-driven deployment mechanism that starts folded to pass the 18" sizing inspection and deploys in-game. |
@@ -54,121 +62,158 @@ Founded in 2026, **Team 39068 "Spaghetti code"** is a student-led robotics team 
 | **Sensors** | Motor-integrated wheel encoders + **Logitech C270 Webcam** for computer vision. |
 | **Control System** | REV Control Hub + REV Driver Hub. |
 
-> [!IMPORTANT]
-> **Expansion Rule Compliance:** The roller intake mechanism starts folded to fit inside the standard 18" x 18" x 18" sizing cube. Upon match start, a servo releases/deploys the intake outward for game element acquisition.
+> **⚠️ Expansion Rule Compliance:** The roller intake mechanism starts folded vertically to fit inside the standard 18" $\times$ 18" $\times$ 18" FTC sizing cube. Upon match start, a servo releases/deploys the intake outward for game element acquisition.
 
 ---
 
-## 💻 Software Architecture & Features
+<!-- SECTION HEADER: SOFTWARE -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=💻%20SOFTWARE%20%26%20AUTONOMOUS&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Software Section" />
+
+<br/>
+
+### 💻 Core Software Stack
 
 Our codebase is built on Java using the official FTC SDK and integrates modern robotics control software:
 
-- **Road Runner 1.0 (`BiobuzzAutonomous`):** Trajectory generation and motion planning tailored for our Tank Drive setup.
-- **OpenCV Color Blob Detection (`AutoAlignToColorOpMode`):** Vision portal processing using `ColorBlobLocatorProcessor` to automatically detect and align with yellow **Pollen** and red/blue **Nectar** targets.
-- **Closed-Loop Velocity PIDF (`HumanDrivenOpMode`):** Custom PIDF velocity algorithm with feedforward (`F`) and anti-windup bounds for launcher accuracy.
-- **FTC Dashboard Integration:** Real-time telemetry streaming, live webcam feed (30 FPS), and on-the-fly parameter tuning accessible at `http://192.168.43.1:8080/dash`.
-- **Roadmap / Pedro Pathing Migration:** Software infrastructure ready for **Pedro Pathing** and custom localizers (Pinpoint, OTOS, Dead Wheels) as soon as the Mecanum hardware upgrade is completed.
-
-> [!TIP]
-> **Live Parameter Tuning:** When connected to the Control Hub's Wi-Fi network, navigate to `http://192.168.43.1:8080/dash` to view real-time flywheel launcher velocity graphs, edit PIDF coefficients live, and inspect camera streams at 30 FPS.
+* **Road Runner 1.0 (`BiobuzzAutonomous`)**: Trajectory generation and motion planning tailored for our Tank Drive setup.
+* **OpenCV Color Blob Detection (`AutoAlignToColorOpMode`)**: Vision portal processing using `ColorBlobLocatorProcessor` to automatically detect and align with yellow **Pollen** and red/blue **Nectar** targets.
+* **Closed-Loop Velocity PIDF (`HumanDrivenOpMode`)**: Custom PIDF velocity algorithm with feedforward (`F`) and anti-windup bounds for flywheel launcher precision.
+* **FTC Dashboard Integration**: Real-time telemetry streaming, live webcam feed (30 FPS), and on-the-fly parameter tuning accessible at `http://192.168.43.1:8080/dash`.
+* **Pedro Pathing Readiness**: Software infrastructure ready for **Pedro Pathing** and custom localizers (Pinpoint, OTOS, Dead Wheels) as soon as the Mecanum hardware upgrade is completed.
 
 ---
 
-## 🎮 TeleOp Driver Controls
+<!-- SECTION HEADER: TELEOP CONTROLS -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=🎮%20TELEOP%20DRIVER%20CONTROLS&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="TeleOp Section" />
+
+<br/>
+
+### 🎮 Driver Mappings (`Gamepad 1`)
 
 TeleOp is mapped for single-driver operation on **Gamepad 1** (`HumanDrivenOpMode`):
 
-### Mapping Table
-| Input | Mechanism / Action |
-| :--- | :--- |
-| `Left Joystick Y` | Drive Forward / Backward |
-| `Left Joystick X` | Turn Left / Right |
-| `Cross (X)` | Toggle Roller Intake ON / OFF |
-| `Square ([])` | Toggle Intake Deployment Servo (Up / Down) |
-| `D-Pad Up` | Increase Launcher Flywheel Speed (`Off` $\rightarrow$ `Low (1500 RPM)` $\rightarrow$ `High (3000 RPM)`) |
-| `D-Pad Down` | Decrease Launcher Flywheel Speed (`High` $\rightarrow$ `Low` $\rightarrow$ `Off`) |
+| Input | Subsystem | Action / Behavior |
+| :--- | :--- | :--- |
+| `Left Joystick Y` | Drivetrain | Forward / Backward power |
+| `Left Joystick X` | Drivetrain | Steering / Turning power |
+| `Cross (X)` | Intake | Toggle Roller Intake ON / OFF |
+| `Square ([])` | Intake Servo | Toggle Deployment Servo (Up / Down) |
+| `D-Pad Up` | Launcher | Increase Flywheel Speed (`Off` $\rightarrow$ `Low (1500 RPM)` $\rightarrow$ `High (3000 RPM)`) |
+| `D-Pad Down` | Launcher | Decrease Flywheel Speed (`High` $\rightarrow$ `Low` $\rightarrow$ `Off`) |
 
 ---
 
-## 🎯 Autonomous & Vision System
+<!-- 🔥 FUTURE ROADMAP SECTION 🔥 -->
+<div align="center">
 
-### 1. Road Runner Autonomous (`BiobuzzAutonomous.java`)
-Executes sequential action trajectories for pre-load scoring and positional alignment during the 30-second autonomous period.
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=70&text=🔮%20ROBOT%20%26%20SOFTWARE%20ROADMAP&fontSize=28&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Future Roadmap Header" />
 
-### 2. Vision Auto-Align Pipeline (`AutoAlignToColorOpMode.java`)
-Uses OpenCV `ColorBlobLocatorProcessor` to detect game elements in real-time via the Logitech C270 camera:
-- **Pollen Target:** Yellow color blob detection with circularity filtering ($0.60 - 1.0$).
-- **Nectar Target:** Red and Blue color blob locator.
-- **Init Selection:**
-  - `Cross`: Target Yellow Pollen
-  - `Circle`: Target Red Nectar
-  - `Square`: Target Blue Nectar
-  - `Triangle`: Target Any Largest Target
+<p align="center"><b>Our development pipeline and upcoming hardware/software upgrades:</b></p>
+
+</div>
+
+<br/>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">🏎️ Mecanum Drivetrain Upgrade</h3>
+      <div align="center">
+        <img src="https://img.shields.io/badge/Status-Seeking_Sponsors-orange?style=flat-square&labelColor=1a1a1a" alt="Status" />
+      </div>
+      <br/>
+      Transitioning from differential Tank Drive to a 4-wheel Mecanum drive system to unlock omnidirectional holonomic movement on the field.
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">📍 Pedro Pathing Integration</h3>
+      <div align="center">
+        <img src="https://img.shields.io/badge/Status-In_Infrastructure_Dev-FFD700?style=flat-square&labelColor=1a1a1a" alt="Status" />
+      </div>
+      <br/>
+      Migrating autonomous pathing to <b>Pedro Pathing</b> for high-speed, bezier curve trajectory generation and precise pose convergence.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">🎯 Dedicated Odometry Sensors</h3>
+      <div align="center">
+        <img src="https://img.shields.io/badge/Status-Hardware_Planned-blue?style=flat-square&labelColor=1a1a1a" alt="Status" />
+      </div>
+      <br/>
+      Integrating gobilda Pinpoint Odometry Computer or SparkFun OTOS sensors for millimeter-level positional tracking during autonomous mode.
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">👁️ Advanced Multi-Blob Vision</h3>
+      <div align="center">
+        <img src="https://img.shields.io/badge/Status-Testing-00E676?style=flat-square&labelColor=1a1a1a" alt="Status" />
+      </div>
+      <br/>
+      Expanding OpenCV <code>ColorBlobLocatorProcessor</code> pipeline to dynamically track, filter, and queue multiple game elements simultaneously.
+    </td>
+  </tr>
+</table>
+
+<br/>
 
 ---
 
-## 📁 Project Structure
+<!-- SECTION HEADER: ANALYTICS -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=📊%20REPOSITORY%20INSIGHTS&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Analytics Section" />
 
-```
-pedro-pathing--spaghetti-code/
-├── TeamCode/                        # Custom OpModes, Autonomous, Localizers & Tuning
-│   └── src/main/java/org/firstinspires/ftc/teamcode/
-│       ├── HumanDrivenOpMode.java   # Main TeleOp control & PIDF Flywheel launcher
-│       ├── BiobuzzAutonomous.java   # Road Runner 1.0 Autonomous routine
-│       ├── AutoAlignToColorOpMode.java # OpenCV vision-based target alignment
-│       ├── TankDrive.java           # Road Runner Tank Drive kinematics
-│       ├── MecanumDrive.java        # Mecanum Drive kinematics (future hardware)
-│       ├── PinpointLocalizer.java   # gobilda Pinpoint localizer integration
-│       ├── OTOSLocalizer.java       # SparkFun OTOS localizer integration
-│       ├── messages/                # Road Runner telemetry & tuning logs
-│       └── tuning/                  # Tuning OpModes & localization tests
-├── FtcRobotController/              # FTC Robot Controller core module
-├── FtcDashboard/                    # Dashboard live telemetry & camera streaming
-├── logo.png                         # Team 39068 Official Logo
-└── README.md                        # Project documentation
-```
+<br/>
+
+<div align="center">
+
+<a href="https://github.com/oliver-lebaigue-bright-bench/pedro-pathing--spaghetti-code">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=oliver-lebaigue-bright-bench&repo=pedro-pathing--spaghetti-code&layout=compact&bg_color=1a1a1a&title_color=FFD700&text_color=ffffff&border_color=333333&hide=html,css" alt="Top Languages" />
+</a>
+
+</div>
 
 ---
 
-## 🚀 Getting Started & Deployment
+<!-- SECTION HEADER: GETTING STARTED -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=⚡%20GETTING%20STARTED%20%26%20DEPLOYMENT&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Getting Started Section" />
 
-### Prerequisites
-- **Android Studio Narwhal (2023.3.1)** or newer.
-- **JDK 17** configured in Android Studio.
-- FTC Driver Hub / Control Hub running official FTC Robot Controller App v9.0+.
+<br/>
 
-### Building & Deploying
-1. Clone this repository:
+### 📲 Deployment Steps
+
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/oliver-lebaigue-bright-bench/pedro-pathing--spaghetti-code.git
    ```
-2. Open the project directory in Android Studio.
-3. Connect your computer to the Control Hub via a USB-C or micro cable.
-4. Select the `:TeamCode` run configuration in the top toolbar.
-5. Click **Run** (`Shift + F10`) to compile and deploy to the Control Hub.
+2. **Open in Android Studio**: Launch Android Studio Narwhal (2023.3.1+) and open the project root directory.
+3. **Connect Control Hub**: Connect your laptop to the Control Hub via USB-C or micro-USB cable.
+4. **Deploy**: Select the `:TeamCode` target configuration and hit **Run** (`Shift + F10`).
 
 ---
 
-## 🤝 Sponsors & Support Us
+<!-- SECTION HEADER: SPONSORS -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=🤝%20SPONSORS%20%26%20SUPPORT%20US&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Sponsors Section" />
 
-As a **rookie team with limited funds**, we are incredibly grateful for the support of our founding sponsors who made our rookie season possible:
+<br/>
 
-- 🛠️ **[iFixit](https://www.ifixit.com/)** – Providing quality repair tools & hardware support.
-- 🎓 **[Pembrokeshire College](https://www.pembrokeshire.ac.uk/)** – Educational support, facility access, and team sponsorship.
+As a **rookie team with limited funds**, we are immensely grateful to our founding sponsors:
 
-> [!IMPORTANT]
-> 📢 **Support Team 39068!** We are actively seeking sponsors and community partners to help us fund hardware upgrades (such as a Mecanum drive kit, odometry modules, and custom machined parts). If you or your organization would like to support us, please reach out at [oliverlebaigue@gmail.com](mailto:oliverlebaigue@gmail.com).
+* 🛠️ **[iFixit](https://www.ifixit.com/)** – Tooling, repair equipment, and hardware support.
+* 🎓 **[Pembrokeshire College](https://www.pembrokeshire.ac.uk/)** – Educational backing, workspace, and sponsorship.
+
+> **📢 Support Team 39068!** We are actively seeking sponsors and community partners to help us fund hardware upgrades (Mecanum drivetrain kit, odometry sensors, and custom machined parts). If you would like to support our rookie team, please get in touch at [oliverlebaigue@gmail.com](mailto:oliverlebaigue@gmail.com)!
 
 ---
 
-## 👥 Team Roster & Credits
+<!-- SECTION HEADER: ROSTER -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=👥%20TEAM%20ROSTER%20%26%20CREDITS&fontSize=20&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Roster Section" />
+
+<br/>
 
 ### Team Leads
-- 👩‍🏫 **Alison Whitehurst** – Team Lead
-- 👨‍🏫 **Eben Sky** – Team Lead
+* 👩‍🏫 **Alison Whitehurst** – Team Lead
+* 👨‍🏫 **Eben Sky** – Team Lead
 
-### Student Team
-| Name | Role(s) |
+### Student Roster
+| Student | Role(s) |
 | :--- | :--- |
 | **Oliver** | Team Manager • Build Team • Software Engineer |
 | **Eli** | Team Manager • Software Engineer |
@@ -182,10 +227,21 @@ As a **rookie team with limited funds**, we are incredibly grateful for the supp
 
 ---
 
-## ✉️ Contact & Inquiries
+<!-- SECTION HEADER: CONTACT -->
+<div align="center">
 
-For sponsorship inquiries, outreach opportunities, or technical questions, feel free to contact us:
+<br/>
 
-- 📧 **Email:** [oliverlebaigue@gmail.com](mailto:oliverlebaigue@gmail.com)
-- 🏫 **Location:** Pembrokeshire College, Wales, United Kingdom
-- 🤖 **FIRST Team Number:** FTC 39068
+### ✉️ Contact & Inquiries
+
+For sponsorship inquiries, outreach, or technical questions:
+
+* 📧 **Email**: [oliverlebaigue@gmail.com](mailto:oliverlebaigue@gmail.com)
+* 🏫 **Location**: Pembrokeshire College, Wales, United Kingdom
+* 🤖 **FIRST Team Number**: FTC 39068
+
+<br/>
+
+<sub>Built with care by Team 39068 "Spaghetti code". © 2026</sub>
+
+</div>
