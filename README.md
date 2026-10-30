@@ -175,13 +175,13 @@ TeleOp is mapped for single-driver operation on **Gamepad 1** (`HumanDrivenOpMod
 ---
 
 <!-- SECTION HEADER: SPONSORS -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=SPONSORS%20AND%20SUPPORT%20US&fontSize=18&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Sponsors Section" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a1a&height=45&text=SPONSORS%20AND%20SUPPORTERS&fontSize=18&fontColor=FFD700&stroke=FFD700&strokeWidth=1" width="100%" alt="Sponsors Section" />
 
 <br/>
 
 As a **rookie team with limited funds**, we are immensely grateful to our founding sponsors:
 
-* 🛠️ **[iFixit](https://www.ifixit.com/)** – Tooling, repair equipment, and hardware support.
+<!-- * 🛠️ **[iFixit](https://www.ifixit.com/)** – Tooling, repair equipment, and hardware support. -->
 * 🎓 **[Pembrokeshire College](https://www.pembrokeshire.ac.uk/)** – Educational backing, workspace, and sponsorship.
 
 > **📢 Support Team 39068!** We are actively seeking sponsors and community partners to help us fund hardware upgrades (Mecanum drivetrain kit, odometry sensors, and custom machined parts). If you would like to support our rookie team, please get in touch at [oliverlebaigue@gmail.com](mailto:oliverlebaigue@gmail.com)!
