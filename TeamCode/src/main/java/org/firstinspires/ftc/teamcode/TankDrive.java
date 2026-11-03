@@ -66,16 +66,16 @@ public final class TankDrive {
         // TODO: fill in these values based on
         //   see https://ftc-docs.firstinspires.org/en/latest/programming_resources/imu/imu.html?highlight=imu#physical-hub-mounting
         public RevHubOrientationOnRobot.LogoFacingDirection logoFacingDirection =
-                RevHubOrientationOnRobot.LogoFacingDirection.UP;
+                RevHubOrientationOnRobot.LogoFacingDirection.FORWARD;
         public RevHubOrientationOnRobot.UsbFacingDirection usbFacingDirection =
-                RevHubOrientationOnRobot.UsbFacingDirection.FORWARD;
+                RevHubOrientationOnRobot.UsbFacingDirection.UP;
 
         // drive model parameters
         // Calculated for 9 cm wheel diameter, REV HD Hex motor (28 counts/rev), 20:1 internal gearbox + 5:1 external ratio = 2800 counts/rev
         // Circumference = 9 cm / 2.54 * PI = 11.1314 inches. inPerTick = 11.1314 / 2800 = 0.0039755
         // (If your internal gearbox is 40:1 instead of 20:1, use 5600 counts/rev -> inPerTick = 0.001988)
-        public double inPerTick = 0.0039755;
-        public double trackWidthTicks = 3521; // Estimated for 14-inch track width (14.0 / 0.0039755)
+        public double inPerTick = 0.07951;
+        public double trackWidthTicks = 176.0; // Estimated for 14-inch track width (14.0 / 0.0039755)
 
         // feedforward parameters (in tick units)
         public double kS = 0.1;
