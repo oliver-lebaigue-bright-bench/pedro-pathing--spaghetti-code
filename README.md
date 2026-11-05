@@ -195,7 +195,7 @@ As a **rookie team with limited funds**, we are immensely grateful to our foundi
 
 ### Team Leads
 * 👩‍🏫 **Alison Whitehurst** – Team Lead
-* 👨‍🏫 **Eben Sky** – Team Lead
+* 👨‍🏫 **[Eben Sky](https://github.com/skyeben)** – Team Lead
 
 ### Student Roster
 | Student | Role(s) |
