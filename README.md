@@ -206,7 +206,7 @@ As a **rookie team with limited funds**, we are immensely grateful to our foundi
 | **Oakley** | Build Team • Electrics |
 | **Tien Le** | Strategy Lead |
 | **Iestyn** | Finance Lead |
-| **Sam** | Social Media |
+| **[Sam](https://github.com/amethystisonline)** | Social Media |
 | **Osian** | Digital Media (Team Logo & Graphics) |
 | **Dawid** | Documentation (Makerspace) |
 
