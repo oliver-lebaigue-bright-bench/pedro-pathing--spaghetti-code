@@ -179,9 +179,9 @@ TeleOp is mapped for single-driver operation on **Gamepad 1** (`HumanDrivenOpMod
 
 <br/>
 
-As a **rookie team with limited funds**, we are immensely grateful to our founding sponsors:
+As a **rookie team with limited funds**, we are immensely grateful to our founding supporters and sponsors:
 
-<!-- * 🛠️ **[iFixit](https://www.ifixit.com/)** – Tooling, repair equipment, and hardware support. -->
+* 🛠️ **[iFixit](https://www.ifixit.com/)** – Tooling, repair equipment, and hardware support.
 * 🎓 **[Pembrokeshire College](https://www.pembrokeshire.ac.uk/)** – Educational backing, workspace, and sponsorship.
 
 > **📢 Support Team 39068!** We are actively seeking sponsors and community partners to help us fund hardware upgrades. If you would like to support our rookie team, please get in touch at [oliverlebaigue@gmail.com](mailto:oliverlebaigue@gmail.com)!
