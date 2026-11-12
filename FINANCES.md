@@ -26,7 +26,7 @@
 
 ### 💰 Team Finances & Budget
 
-We're **Team 39068 "Spaghetti code"**, a student-led rookie robotics team of 16 and 17-year-olds from **Pembrokeshire College** in Wales, competing in our first FIRST Tech Challenge season (**BIOBUZZ 2026–2027**)!
+We're **Team 39068 "Spaghetti code"**, a student-led rookie robotics team of 16 and 18-year-olds from **Pembrokeshire College** in Wales, competing in our first FIRST Tech Challenge season (**BIOBUZZ 2026–2027**)!
 
 This document is our team finance tracker where we keep tabs on what parts we need for the robot, what sponsors have helped us out with so far, and what budget we still need to raise.
 
