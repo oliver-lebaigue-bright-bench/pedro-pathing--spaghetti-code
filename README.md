@@ -15,6 +15,7 @@
 
 <!-- Action & Status Badges -->
 <a href="https://github.com/oliver-lebaigue-bright-bench/pedro-pathing--spaghetti-code"><img src="https://img.shields.io/badge/FTC%20Season-2026--2027%20BIOBUZZ-FFD700?style=for-the-badge&logo=first&logoColor=black" alt="FTC Season" height="38" /></a>
+<a href="FINANCES.md"><img src="https://img.shields.io/badge/Finances-Budget_%26_Sponsors-00E676?style=for-the-badge&logo=google-sheets&logoColor=black" alt="Finances" height="38" /></a>
 <a href="mailto:oliverlebaigue@gmail.com"><img src="https://img.shields.io/badge/Contact-Email_Us-blue?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact Email" height="38" /></a>
 <a href="#sponsors-and-support-us"><img src="https://img.shields.io/badge/Status-Rookie_Team-orange?style=for-the-badge" alt="Status" height="38" /></a>
 
@@ -185,6 +186,8 @@ As a **rookie team with limited funds**, we are immensely grateful to our foundi
 * 🎓 **[Pembrokeshire College](https://www.pembrokeshire.ac.uk/)** – Educational backing, workspace, and sponsorship.
 
 > **📢 Support Team 39068!** We are actively seeking sponsors and community partners to help us fund hardware upgrades. If you would like to support our rookie team, please get in touch at [oliverlebaigue@gmail.com](mailto:oliverlebaigue@gmail.com)!
+> 
+> 📊 **Financial Documentation:** Check out our comprehensive [Financial Documentation (FINANCES.md)](FINANCES.md) for our itemized seasonal budget, sponsorship tiers, confirmed funding, and procurement workflows.
 
 ---
 
@@ -205,7 +208,7 @@ As a **rookie team with limited funds**, we are immensely grateful to our foundi
 | **Charlie** | Lead Driver |
 | **Oakley** | Build Team • Electrics |
 | **Tien Le** | Strategy Lead |
-| **Iestyn** | Finance Lead |
+| **Iestyn** | [Finance Lead](FINANCES.md) |
 | **[Sam](https://github.com/amethystisonline)** | Social Media |
 | **Osian** | Digital Media (Team Logo & Graphics) |
 | **Dawid** | Documentation (Makerspace) |
