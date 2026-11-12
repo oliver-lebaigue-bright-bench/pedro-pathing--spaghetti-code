@@ -32,7 +32,7 @@ This document is our team finance tracker where we keep tabs on what parts we ne
 
 * 💳 **Finance Lead:** Iestyn (keeping all our spreadsheet numbers in check!)
 * 👩‍🏫 **Mentors:** Alison Whitehurst & Eben Sky
-* 🍝 **Team Manager:** Oliver
+* 🍝 **Team Manager:** Oliver lebaigue & Eli
 * 🏫 **College:** Pembrokeshire College (Wales, UK)
 
 ---
