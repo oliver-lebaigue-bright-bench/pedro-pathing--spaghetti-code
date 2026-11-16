@@ -31,8 +31,8 @@ We're **Team 39068 "Spaghetti code"**, a student-led rookie robotics team of 16 
 This document is our team finance tracker where we keep tabs on what parts we need for the robot, what sponsors have helped us out with so far, and what budget we still need to raise.
 
 * 💳 **Finance Lead:** Iestyn (keeping all our spreadsheet numbers in check!)
-* 👩‍🏫 **Mentors:** Alison Whitehurst & Eben Sky
-* 🍝 **Team Manager:** Oliver
+* 👩‍🏫 **Mentors:** Alison Whitehurst & [Eben Sky](https://gihtub.com/ebensky)
+* 🍝 **Team Manager:** [Oliver](https://github.com/oliver-lebaigue-bright-bench) & [BrokenV0id](https://github.com/BrokenV0id)
 * 🏫 **College:** Pembrokeshire College (Wales, UK)
 
 ---

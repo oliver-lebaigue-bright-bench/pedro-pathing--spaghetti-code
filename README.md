@@ -201,17 +201,17 @@ As a **rookie team with limited funds**, we are immensely grateful to our foundi
 * 👨‍🏫 **[Eben Sky](https://github.com/skyeben)** – Team Lead
 
 ### Student Roster
-| Student | Role(s) |
-| :--- | :--- |
+| Student                                                       | Role(s) |
+|:--------------------------------------------------------------| :--- |
 | **[Oliver](https://github.com/oliver-lebaigue-bright-bench)** | Team Manager • Build Team • Software Engineer |
-| **[Eli](https://github.com/BrokenV0id)** | Team Manager • Software Engineer |
-| **Charlie** | Lead Driver |
-| **Oakley** | Build Team • Electrics |
-| **Tien Le** | Strategy Lead |
-| **Iestyn** | [Finance Lead](FINANCES.md) |
-| **[Sam](https://github.com/amethystisonline)** | Social Media |
-| **Osian** | Digital Media (Team Logo & Graphics) |
-| **Dawid** | Documentation (Makerspace) |
+| **[BrokenV0id](https://github.com/BrokenV0id)**               | Team Manager • Software Engineer |
+| **Charlie**                                                   | Lead Driver |
+| **Oakley**                                                    | Build Team • Electrics |
+| **Tien Le**                                                   | Strategy Lead |
+| **Iestyn**                                                    | [Finance Lead](FINANCES.md) |
+| **[Sam](https://github.com/amethystisonline)**                | Social Media |
+| **Osian**                                                     | Digital Media (Team Logo & Graphics) |
+| **Dawid**                                                     | Documentation (Makerspace) |
 
 ---
 
