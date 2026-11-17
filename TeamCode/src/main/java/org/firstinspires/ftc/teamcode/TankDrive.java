@@ -74,7 +74,7 @@ public final class TankDrive {
         // Calculated for 9 cm wheel diameter, REV HD Hex motor (28 counts/rev), 20:1 internal gearbox + 5:1 external ratio = 2800 counts/rev
         // Circumference = 9 cm / 2.54 * PI = 11.1314 inches. inPerTick = 11.1314 / 2800 = 0.0039755
         // (If your internal gearbox is 40:1 instead of 20:1, use 5600 counts/rev -> inPerTick = 0.001988)
-        public double inPerTick = 0.0039755;
+        public double inPerTick = 0.00039755;
         public double trackWidthTicks = 3521; // Estimated for 14-inch track width (14.0 / 0.0039755)
 
         // feedforward parameters (in tick units)

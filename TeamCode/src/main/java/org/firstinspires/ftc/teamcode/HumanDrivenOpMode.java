@@ -85,7 +85,7 @@ public class HumanDrivenOpMode extends LinearOpMode {
     }
 
     private void handleDriving() {
-        double drive = -gamepad1.left_stick_y;
+        double drive = gamepad1.left_stick_y;
         double turn = -gamepad1.left_stick_x;
         leftDrive.setPower(drive + turn);
         rightDrive.setPower(drive - turn);
